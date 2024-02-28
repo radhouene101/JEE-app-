@@ -27,4 +27,11 @@ public class LogementResources {
 		else
 			return Response.status(Response.Status.NOT_FOUND).entity("liste vide" ).build();
 	}
+	public Response createLogement(Logement logement){
+		if(LB.){
+
+		}else{
+
+		}
+	}
 }

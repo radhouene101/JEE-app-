@@ -73,9 +73,7 @@ public class LogementBusiness {
 		}
 		return liste;
 	}
-	public Logement ajouterLogement(Type type){
-		return
-	}
+
 	
 
 }

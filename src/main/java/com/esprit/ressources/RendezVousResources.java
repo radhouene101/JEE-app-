@@ -37,7 +37,7 @@ public class RendezVousResources {
 		return Response.status(Status.NOT_FOUND).entity("La liste est vide").build();
 
 	}
-	@POST
+	@PUT
 	@Path("add")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response ajoutRdv(RendezVous R){
@@ -63,7 +63,7 @@ public class RendezVousResources {
 		return Response.status(Status.NOT_FOUND).entity("echec not found").build();
 	}
 	@Path("update/{id}")
-	@PUT
+	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response updateRdv(@PathParam(value = "id") int id , RendezVous R){
 		if(RB.updateRendezVous(id,R)){

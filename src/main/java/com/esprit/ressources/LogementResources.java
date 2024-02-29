@@ -19,6 +19,7 @@ public class LogementResources {
 
     public static LogementBusiness LB= new LogementBusiness();
     @GET
+	@Path("getAll")
     @Produces(MediaType.APPLICATION_JSON)
 	public Response GetAll()
 	{
@@ -27,5 +28,4 @@ public class LogementResources {
 		else
 			return Response.status(Response.Status.NOT_FOUND).entity("liste vide" ).build();
 	}
-
 }
